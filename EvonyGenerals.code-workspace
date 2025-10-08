@@ -1,0 +1,113 @@
+{
+    "folders": [
+        {
+            "name": "EvonyGenerals",
+            "path": "."
+        }
+    ],
+    "settings": {
+        "python.defaultInterpreterPath": "python",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true,
+        "python.formatting.provider": "black",
+        "python.analysis.typeCheckingMode": "basic",
+        "files.associations": {
+            "*.ui": "xml"
+        },
+        "files.exclude": {
+            "**/__pycache__": true,
+            "**/*.pyc": true,
+            "Temp/": true,
+            "screenshot*.png": true,
+            "*.log": true
+        },
+        "git.ignoreLimitWarning": true,
+        "python.analysis.extraPaths": [
+            "."
+        ]
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-python.python",
+            "ms-python.vscode-pylance", 
+            "ms-vscode.vscode-json",
+            "redhat.vscode-xml",
+            "ms-vscode.powershell"
+        ]
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "EvonyGenerals - Main Application",
+                "type": "debugpy",
+                "request": "launch",
+                "program": "${workspaceFolder}/EvonyGenerals.py",
+                "console": "integratedTerminal",
+                "cwd": "${workspaceFolder}",
+                "env": {
+                    "PYTHONPATH": "${workspaceFolder}"
+                }
+            },
+            {
+                "name": "EvonyGenerals - Debug Mode",
+                "type": "debugpy", 
+                "request": "launch",
+                "program": "${workspaceFolder}/EvonyGenerals.py",
+                "console": "integratedTerminal",
+                "cwd": "${workspaceFolder}",
+                "env": {
+                    "PYTHONPATH": "${workspaceFolder}",
+                    "PYTHONOPTIMIZE": "0"
+                },
+                "args": []
+            }
+        ]
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "Install Dependencies",
+                "type": "shell",
+                "command": "pip",
+                "args": ["install", "-r", "requirements.txt"],
+                "group": "build",
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always",
+                    "focus": false,
+                    "panel": "shared"
+                },
+                "problemMatcher": []
+            },
+            {
+                "label": "Run EvonyGenerals",
+                "type": "shell", 
+                "command": "python",
+                "args": ["EvonyGenerals.py"],
+                "group": "build",
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always",
+                    "focus": true,
+                    "panel": "shared"
+                },
+                "problemMatcher": []
+            },
+            {
+                "label": "Test OCR Engine",
+                "type": "shell",
+                "command": "python", 
+                "args": ["-c", "from OCREngine import OCREngine; print('OCR Engine loaded successfully')"],
+                "group": "test",
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always",
+                    "focus": false,
+                    "panel": "shared"
+                }
+            }
+        ]
+    }
+}
