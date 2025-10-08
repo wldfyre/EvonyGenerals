@@ -1,0 +1,22 @@
+# requirements.txt for EvonyGenerals Project
+
+# Core Dependencies
+PyQt5>=5.15.0
+opencv-python>=4.5.0
+pytesseract>=0.3.8
+Pillow>=8.0.0
+pure-python-adb>=0.3.0
+imagehash>=4.2.0
+
+# Google Sheets Integration
+gspread>=5.7.0
+google-auth>=2.15.0
+google-auth-oauthlib>=0.8.0
+google-auth-httplib2>=0.1.0
+
+# Additional Image Processing
+numpy>=1.21.0
+matplotlib>=3.5.0
+
+# Utility Libraries
+xml-python>=0.4.3

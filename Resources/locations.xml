@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is the root element for Evony Generals Screen Locations -->
+<EvonyGenerals>
+    <!-- Each location is represented by a <preset> element -->
+    <!-- Basic Navigation Elements -->
+    <preset name="Back" xLoc="0.04" yLoc="0.04" ClickAndDrag="false"/>
+    <preset name="Home" xLoc="0.92" yLoc="0.94" ClickAndDrag="false"/>
+    
+    <!-- Screen Navigation Actions -->
+    <preset name="ScreenSwipeUp" xLoc="0.56" yLoc="1.0" xDest="0.56" yDest="0.0" ClickAndDrag="true"/>
+    <preset name="ScreenSwipeDown" xLoc="0.56" yLoc="0.04" xDest="0.56" yDest="1.0" ClickAndDrag="true"/>
+    <preset name="ScreenSwipeLeft" xLoc="0.56" yLoc="0.9" xDest="0.0" yDest="0.9" ClickAndDrag="true"/>
+    <preset name="ScreenSwipeRight" xLoc="0.01" yLoc="0.83" xDest="0.56" yDest="0.83" ClickAndDrag="true"/>
+    
+    <!-- Generals Screen Specific Areas -->
+    <preset name="GeneralsTab" xLoc="0.15" yLoc="0.08" ClickAndDrag="false"/>
+    <preset name="GeneralsListHeader" xLoc="0.0" yLoc="0.15" xDest="1.0" yDest="0.20" ClickAndDrag="false"/>
+    <preset name="GeneralsList" xLoc="0.0" yLoc="0.20" xDest="1.0" yDest="0.85" ClickAndDrag="false"/>
+    
+    <!-- General Information Regions -->
+    <preset name="GeneralNameBox" xLoc="0.05" yLoc="0.20" xDest="0.30" yDest="0.35" ClickAndDrag="false"/>
+    <preset name="GeneralLevelBox" xLoc="0.30" yLoc="0.20" xDest="0.45" yDest="0.35" ClickAndDrag="false"/>
+    <preset name="GeneralTypeBox" xLoc="0.45" yLoc="0.20" xDest="0.65" yDest="0.35" ClickAndDrag="false"/>
+    <preset name="GeneralStatusBox" xLoc="0.65" yLoc="0.20" xDest="0.85" yDest="0.35" ClickAndDrag="false"/>
+    
+    <!-- Filter and Sort Options -->
+    <preset name="FilterButton" xLoc="0.85" yLoc="0.08" ClickAndDrag="false"/>
+    <preset name="SortButton" xLoc="0.75" yLoc="0.08" ClickAndDrag="false"/>
+    <preset name="SearchBox" xLoc="0.30" yLoc="0.08" xDest="0.70" yDest="0.12" ClickAndDrag="false"/>
+    
+    <!-- General Types Filter -->
+    <preset name="AllGeneralsTab" xLoc="0.1" yLoc="0.12" ClickAndDrag="false"/>
+    <preset name="MilitaryTab" xLoc="0.2" yLoc="0.12" ClickAndDrag="false"/>
+    <preset name="DevelopmentTab" xLoc="0.3" yLoc="0.12" ClickAndDrag="false"/>
+    <preset name="DutyTab" xLoc="0.4" yLoc="0.12" ClickAndDrag="false"/>
+    <preset name="SubCityTab" xLoc="0.5" yLoc="0.12" ClickAndDrag="false"/>
+    
+    <!-- General Detail View Areas -->
+    <preset name="GeneralDetailBox" xLoc="0.0" yLoc="0.15" xDest="1.0" yDest="0.85" ClickAndDrag="false"/>
+    <preset name="GeneralStatsBox" xLoc="0.05" yLoc="0.40" xDest="0.95" yDest="0.80" ClickAndDrag="false"/>
+    <preset name="GeneralSkillsBox" xLoc="0.05" yLoc="0.25" xDest="0.95" yDest="0.40" ClickAndDrag="false"/>
+    
+    <!-- Action Buttons -->
+    <preset name="UpgradeButton" xLoc="0.1" yLoc="0.85" ClickAndDrag="false"/>
+    <preset name="AssignButton" xLoc="0.3" yLoc="0.85" ClickAndDrag="false"/>
+    <preset name="UnassignButton" xLoc="0.5" yLoc="0.85" ClickAndDrag="false"/>
+    <preset name="DismissButton" xLoc="0.7" yLoc="0.85" ClickAndDrag="false"/>
+    
+    <!-- Scrolling Actions for Lists -->
+    <preset name="GeneralsListSwipeDown" xLoc="0.5" yLoc="0.3" xDest="0.5" yDest="0.7" ClickAndDrag="true"/>
+    <preset name="GeneralsListSwipeUp" xLoc="0.5" yLoc="0.7" xDest="0.5" yDest="0.3" ClickAndDrag="true"/>
+
+    <!-- Add more locations as needed for generals management -->
+</EvonyGenerals>
